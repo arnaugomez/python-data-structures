@@ -1,6 +1,4 @@
-from crypt import methods
 from dataclasses import dataclass
-from typing import List
 
 
 @dataclass
@@ -16,7 +14,6 @@ class LinkedList:
     def __init__(self) -> None:
         self._size = 0
         self._firstNode = None
-        
 
     def add(self, position: int, element: int):
         if position == 0:
